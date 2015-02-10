@@ -14,12 +14,7 @@ from numpy import *
 
 def i_love_you():
 
-#    scale = 1
-#    scale = .5
-
     t = linspace(-10,10,100)
-#    t = linspace(-3,3,100)
-
     
     scales = linspace(.1,1)
     i = 0
@@ -30,21 +25,12 @@ def i_love_you():
 
         xlim(-20,20)
         ylim(-20,20)
+        title('I Love You')
         plot(x,y,'r')
-        name = 'base_heart_' + str(i) + '.png'
+        fileNum = str(i)
+        name = 'base_heart_' + fileNum.zfill(3) + '.png'
         savefig(name)
-        show()
         i += 1
-
-#    x = scale * (16 * pow(sin(t),3))
-
-#    y = scale * (13 * cos(t) - 5 * cos(2*t) - 2 * cos(3*t) - cos(4*t))
-
-#    xlim(-20,20)
-#    ylim(-20,20)
-#    plot(x,y,'r')
-#    savefig('base_heart.png')
-#    show()
 
 ## The end
 ## But not really since my love for you never ends
