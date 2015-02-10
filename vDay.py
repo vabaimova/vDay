@@ -24,7 +24,9 @@ def i_love_you():
         y = scale * (13 * cos(t) - 5 * cos(2*t) - 2 * cos(3*t) - cos(4*t))
 
         xlim(-20,20)
+        xlabel("I love you more than anything.")
         ylim(-20,20)
+        ylabel("I love you more than everything.")
         title('I Love You')
         plot(x,y,'r')
         fileNum = str(i)
